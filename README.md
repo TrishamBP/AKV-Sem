@@ -7,9 +7,9 @@
   <h3>Semantic-Aware Cache Engineering for Agents</h3>
 
   <p>
-    <a href="https://fuvty.github.io/thinking_yard_project_page/projects/akv/">🌐 <b>Project Page</b></a>
+    <a href="https://fuvty.github.io/thinking_yard_project_page/projects/akv/">🌐 <b>AKV Project Page</b></a>
     •
-    <a href="https://arxiv.org/pdf/2610.28577">📑 <b>Paper</b></a>
+    <a href="https://arxiv.org/pdf/2610.28577">📑 <b>AKV Paper</b></a>
   </p>
 </div>
 
@@ -19,7 +19,10 @@ AKV-Sem brings KV cache engineering to LLM agents and adds semantic analysis to 
 - `akv.agent.policies.semantic` adds semantic awareness: the agent labels each dropped path as failed, irrelevant or resolved with a reason, and those notes stay visible and stop it from repeating dead ends. See [Semantic Awareness](#semantic-awareness).
 - `akv.system` executes cache operations through SGLang's OpenAI-compatible Chat Completions API.
 
-AKV-Sem is built on [AKV](https://github.com/thu-nics/AKV) by Tianyu Fu et al. ([paper](https://arxiv.org/pdf/2610.28577)), licensed under Apache-2.0.
+### Credits
+
+- **Semantic awareness** (`akv.agent.policies.semantic`, its tests, the semantic demo mode and the AKV-Sem logo) was designed and added by **Trisham Bharat Patil** ([@TrishamBP](https://github.com/TrishamBP)).
+- **The underlying AKV framework** (the agent cache policies, the SGLang-based system, and the Drop/Reposition operations) is by Tianyu Fu et al.: [AKV](https://github.com/thu-nics/AKV), [paper](https://arxiv.org/pdf/2610.28577). It is used and modified under the Apache-2.0 license.
 
 ## Environment Setup
 
