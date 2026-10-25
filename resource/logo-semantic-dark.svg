@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="80 40 1320 820" width="660" height="410" role="img" aria-labelledby="t d">
+  <title id="t">AKV semantic logo</title>
+  <desc id="d">The AKV cache bot holds a KV block while a thought bubble keeps its verdict ledger: resolved, failed and irrelevant paths.</desc>
+  <style>
+    .row { transform-box: fill-box; animation: note 6s ease-in-out infinite both; }
+    .r2 { animation-delay: .35s; }
+    .r3 { animation-delay: .7s; }
+    .held { transform-box: fill-box; transform-origin: 0% 100%; animation: lift 6s ease-in-out infinite; }
+    .dot { animation: blink 6s ease-in-out infinite; }
+    .d2 { animation-delay: .15s; }
+    @keyframes note {
+      0%, 6% { opacity: 0; transform: translateX(-14px); }
+      16%, 88% { opacity: 1; transform: none; }
+      100% { opacity: 0; transform: none; }
+    }
+    @keyframes lift {
+      0%, 100% { transform: rotate(0deg); }
+      8% { transform: rotate(-8deg) translateY(-6px); }
+      16% { transform: rotate(0deg); }
+    }
+    @keyframes blink {
+      0%, 4% { opacity: .2; }
+      12%, 100% { opacity: 1; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .row, .held, .dot { animation: none; }
+    }
+  </style>
+
+  <!-- Body -->
+  <path fill="#f0f6fc" d="M300 188 C520 186 650 200 712 262 C760 320 752 420 750 520 C748 640 752 740 700 790
+    C640 840 480 838 330 830 C200 822 120 800 108 680 C100 580 104 420 112 330 C122 230 200 190 300 188 Z"/>
+
+  <!-- Visor with two KV-block eyes -->
+  <g transform="rotate(1.2 432 367)">
+    <rect x="175" y="268" width="515" height="198" rx="64" fill="#0d1117"/>
+    <rect x="226" y="318" width="95" height="95" rx="13" fill="#f0f6fc"/>
+    <rect x="386" y="318" width="95" height="95" rx="13" fill="#f0f6fc"/>
+    <!-- Semantic glint: a tiny label line under the eyes -->
+    <rect x="530" y="352" width="110" height="26" rx="13" fill="#8b7dff"/>
+  </g>
+
+  <!-- Cheeks -->
+  <ellipse cx="397" cy="602" rx="34" ry="57" fill="#0d1117" transform="rotate(4 397 602)"/>
+  <ellipse cx="624" cy="608" rx="33" ry="56" fill="#0d1117" transform="rotate(-2 624 608)"/>
+
+  <!-- Arm holding a tagged KV block -->
+  <path d="M672 492 C712 470 748 445 790 410" fill="none" stroke="#0d1117" stroke-width="8" stroke-linecap="round"/>
+  <path d="M728 566 C760 530 790 490 812 452" fill="none" stroke="#0d1117" stroke-width="8" stroke-linecap="round"/>
+  <path d="M700 520 C740 490 776 456 800 420" fill="none" stroke="#f0f6fc" stroke-width="44" stroke-linecap="round"/>
+  <g class="held">
+    <rect x="815" y="306" width="96" height="96" rx="13" fill="#8b7dff"/>
+    <path d="M840 354 L857 371 L888 336" fill="none" stroke="#0d1117" stroke-width="14"
+      stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <circle cx="800" cy="416" r="33" fill="#f0f6fc" stroke="#0d1117" stroke-width="8"/>
+
+  <!-- Thought dots -->
+  <circle class="dot" cx="930" cy="292" r="12" fill="#f0f6fc"/>
+  <circle class="dot d2" cx="968" cy="250" r="18" fill="#f0f6fc"/>
+
+  <!-- Verdict ledger bubble -->
+  <rect x="1000" y="62" width="380" height="330" rx="56" fill="#0d1117" stroke="#f0f6fc" stroke-width="18"/>
+
+  <g class="row r1">
+    <rect x="1040" y="102" width="64" height="64" rx="12" fill="#2ea043"/>
+    <path d="M1056 135 L1068 147 L1089 121" fill="none" stroke="#0d1117" stroke-width="10"
+      stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="1126" y="117" width="210" height="16" rx="8" fill="#c9d1d9"/>
+    <rect x="1126" y="141" width="140" height="12" rx="6" fill="#30363d"/>
+  </g>
+  <g class="row r2">
+    <rect x="1040" y="195" width="64" height="64" rx="12" fill="#f85149"/>
+    <path d="M1059 214 L1085 240 M1085 214 L1059 240" fill="none" stroke="#0d1117" stroke-width="10"
+      stroke-linecap="round"/>
+    <rect x="1126" y="210" width="180" height="16" rx="8" fill="#c9d1d9"/>
+    <rect x="1126" y="234" width="120" height="12" rx="6" fill="#30363d"/>
+  </g>
+  <g class="row r3">
+    <rect x="1040" y="288" width="64" height="64" rx="12" fill="#6e7681"/>
+    <path d="M1058 320 L1086 320" fill="none" stroke="#0d1117" stroke-width="10" stroke-linecap="round"/>
+    <rect x="1126" y="303" width="150" height="16" rx="8" fill="#c9d1d9"/>
+    <rect x="1126" y="327" width="100" height="12" rx="6" fill="#30363d"/>
+  </g>
+</svg>
